@@ -1,0 +1,20 @@
+/*text animation*/
+.overlay
+{
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+}
+.slide
+{
+    transition: width 1s;
+    background-color: rgb(31, 31, 31);
+    width: 0%;
+}
+/*to make button full size in phone */
+@media (max-width: 505px)
+{
+    #submit
+    {
+        width: 100%;
+    }
+}

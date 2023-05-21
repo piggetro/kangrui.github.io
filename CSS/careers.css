@@ -1,0 +1,33 @@
+/*paragrpah styles*/
+p
+{
+    text-align: justify;
+    color: white;
+}
+/*color*/
+.col-lg-6
+{
+    color: rgb(255, 105, 25);
+}
+.text-center
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3.8em;
+}
+/*accordian styles*/
+.accordion-button:hover
+{
+    color: white;
+}
+.accordion
+{
+    width: 23em;
+}
+@media (max-width: 522px)
+{
+    .accordion
+    {
+        width: 15em;
+    }
+}

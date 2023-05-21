@@ -1,0 +1,38 @@
+/*when button is active*/
+#list div.active
+{
+    background-color: rgb(255, 123, 0);
+    color: black;
+}
+/*header styles*/
+.header
+{
+    border: 2px rgb(255, 123, 0) solid;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+/*image styles*/
+img
+{
+    filter: blur(3px);
+    width: 20em;
+    height: 20em;
+    transition: height 0.3s, width 0.3s;
+    cursor: pointer;
+}
+img:hover
+{
+    filter: blur(0px);
+    width: 25em;
+}
+.hide
+{
+    display: none;
+}
+/*paragraph*/
+p
+{
+    text-align: justify;
+    color: white;
+}

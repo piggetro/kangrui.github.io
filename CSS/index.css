@@ -1,0 +1,221 @@
+/*first section*/
+#intro
+{
+  background-image: linear-gradient(rgb(25, 25, 25), rgb(52, 52, 52));
+  color: white;
+}
+/*text animation*/
+.typing-demo {
+  color: white;
+  position: relative;
+  height: 1.3em;
+}
+.typing-demo::before,
+.typing-demo::after
+{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.typing-demo::before
+{
+  background-color:  rgb(25, 25, 25);
+  animation: typewriter 1.5s steps(8) 0.3s forwards;
+}
+.typing-demo::after
+{
+  width: 0.125em;
+  background-color: white;
+  animation: typewriter 1.5s steps(8) 0.3s forwards,
+    blink 800ms steps(8) infinite;
+}
+@keyframes typewriter
+{
+  to {
+    left: 100%
+  }
+}
+@keyframes blink
+{
+  to
+  {
+    background: transparent;
+  }
+}
+/*intro right-section*/
+#intro p, #about-desc
+{
+  text-align: justify;
+}
+/*images styles*/
+/*first-image*/
+@media (max-width: 1000px)
+{
+  #img, #img-about
+  {
+    width: 20em;
+    display: flex;
+    align-self: center;
+  }
+}
+#img
+{
+  width: 30em;
+}
+/*second-img*/
+#img-about
+{
+  width: 23em;
+  height: 90%;
+}
+/*slider image*/
+.image
+{
+  width: 27em;
+}
+.box
+{
+  width: fit-content;
+}
+/*overlay (ontop of image)*/
+.overlay
+{
+  transition: all 0.8s;
+  background-color: rgb(255, 170, 42);
+  width: 0;
+}
+.job:hover .text
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.job:hover .overlay
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 12px white;
+}
+.text
+{
+  display: none;
+  color:rgb(40, 40, 40);
+}
+/*first page first right section*/
+@media (max-width:768px)
+{
+  #intro_right, #about
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #info
+  {
+    margin-left: 3em
+  }
+}
+/*carousell part*/
+.second-part
+{
+  background-image: linear-gradient(rgb(52, 52, 52), rgb(44, 44, 44));
+  color: white;
+}
+#header, #element
+{
+  font-family: 'Quicksand', sans-serif;
+}
+
+#carousel h1
+{
+  color:rgb(255, 136, 32);
+}
+#carousel p
+{
+  text-align: justify;
+}
+/*about icon*/
+#about-icon
+{
+  color:rgb(255, 163, 82);
+}
+/*interest icon*/
+#interest-bar svg
+{
+  color:rgb(255, 136, 32);
+}
+/*calendar*/
+.calendar
+{
+  background-color:rgb(40, 40, 40);
+  height: 38rem;
+  width: 29rem;
+}
+@media (max-width: 505px)
+{
+  .calendar
+  {
+    width: 21rem;
+    height: 38rem;
+  }
+  .days div
+  {
+    width: 3rem !important;
+  }
+  #submit
+  {
+    width: 100%;
+  }
+}
+.month
+{
+  height: 9rem;
+  background-color:rgb(255, 119, 0);
+  text-shadow: 2px 1px rgba(63, 63, 63, 0.5);
+}
+.weekdays
+{
+  height: 5rem;
+}
+.weekdays div
+{
+  letter-spacing: 2px;
+}
+.days
+{
+  height: 60%;
+}
+.days div
+{
+  width: calc(29rem/7);    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  transition: border 0.2s, background-color 0.2s;
+}
+.prev-date, .next-date
+{
+  opacity: 0.5;
+}
+.days div:hover:not(.today)
+{
+  background-color: rgb(85, 85, 85);
+  border: 1px solid rgb(179, 179, 179);
+  cursor: pointer;
+  color: black;
+}
+.today
+{
+  background-color:rgb(255, 136, 32);
+  cursor: pointer;
+}
+/*svg styles*/
+svg
+{
+  cursor: pointer;
+}
